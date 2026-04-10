@@ -1,0 +1,21 @@
+{
+  "name": "genderize-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HNG Stage 0 backend API using Genderize and Vercel serverless functions",
+  "scripts": {
+    "build": "tsc --noEmit false --outDir dist",
+    "dev": "tsx src/dev-server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "npm.cmd run build && node dist/tests/run.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vercel/node": "^5.7.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
